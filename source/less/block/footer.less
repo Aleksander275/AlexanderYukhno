@@ -1,0 +1,26 @@
+.footer__list-link {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  animation: icons 1s 2s both;
+}
+
+@keyframes icons {
+  0% {
+    left: -50px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.footer__item-link {
+  margin-bottom: 20px;
+
+  &:hover {
+    transform: scale(1.5) translate(10px);
+  }
+}

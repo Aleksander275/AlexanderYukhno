@@ -1,0 +1,142 @@
+.skills {
+  position: relative;
+  animation: skill 5s 3s both;
+}
+
+@keyframes skill {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.skills__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 40px auto 20px auto;
+  text-align: center;
+  width: 300px;
+  z-index: 1;
+  background-color: #283645;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    top: 10px;
+    background-color: white;
+    z-index: -1;
+  }
+}
+
+.skills__wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.skills__list {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  height: 380px;
+  list-style: none;
+}
+
+.skills__item {
+  display: flex;
+  align-items: flex-end;
+  margin: 0 20px;
+  width: 100px;
+
+  &:nth-child(1n) {
+    height: 90%;
+    background-color: #ff852b;
+  }
+
+  &:nth-child(2n) {
+    height: 80%;
+    background-color: #009dda;
+  }
+
+  &:nth-child(3n) {
+    height: 70%;
+    background-color: #2a4f84;
+  }
+
+  &:nth-child(4n) {
+    height: 60%;
+    background-color: #e7f625;
+  }
+
+  &:nth-child(5n) {
+    height: 50%;
+    background-color: #bf3323;
+  }
+
+  &:nth-child(6n) {
+    height: 40%;
+    background-color: #ffffff;
+  }
+
+  &:nth-child(7n) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: green;
+  }
+
+  &:hover {
+    animation: skills 2s 3s;
+  }
+}
+
+@keyframes skills {
+  50% {
+    height: 100%;
+  }
+}
+
+.skills__item--add {
+  animation: skill_add 2s 3s infinite;
+}
+
+@keyframes skill_add {
+  0% {
+    opacity: 0.1;
+  } 
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.skills__icon-plus {
+  width: 60px;
+  height: 60px;
+  stroke: @basic-white;
+}
+
+.skills__desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.skills__text {
+  margin: 0 50px 0 0;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
