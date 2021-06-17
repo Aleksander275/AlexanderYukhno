@@ -16,27 +16,24 @@
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
-  margin: 40px auto 20px auto;
+  margin: 30px auto 20px auto;
   text-align: center;
   width: 300px;
   z-index: 1;
-  background-color: #283645;
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    left: 0;
-    top: 10px;
-    background-color: white;
-    z-index: -1;
-  }
+  background-color: transparent;
 }
 
 .skills__wrapper {
   max-width: 1220px;
   margin: 0 auto;
+
+  @media (max-width: @desktop-width) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: @tablet-width) {
+    padding: 0 20px;
+  }
 }
 
 .skills__list {
@@ -47,6 +44,10 @@
   padding: 0;
   height: 380px;
   list-style: none;
+
+  @media (max-width: @tablet-width) {
+    height: 280px;
+  }
 }
 
 .skills__item {
@@ -61,12 +62,12 @@
   }
 
   &:nth-child(2n) {
-    height: 80%;
+    height: 90%;
     background-color: #009dda;
   }
 
   &:nth-child(3n) {
-    height: 70%;
+    height: 80%;
     background-color: #2a4f84;
   }
 
@@ -76,12 +77,12 @@
   }
 
   &:nth-child(5n) {
-    height: 50%;
+    height: 60%;
     background-color: #bf3323;
   }
 
   &:nth-child(6n) {
-    height: 40%;
+    height: 80%;
     background-color: #ffffff;
   }
 
@@ -90,11 +91,21 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: green;
+    background-color: #b3b3b3;
   }
 
   &:hover {
-    animation: skills 2s 3s;
+    animation: skills 2s;
+  }
+
+  @media (max-width: @desktop-width) {
+    margin: 0 10px;
+    width: 80px;
+  }
+
+  @media (max-width: @tablet-width) {
+    width: 100%;
+    margin: 0 4px;
   }
 }
 
@@ -124,13 +135,26 @@
   width: 60px;
   height: 60px;
   stroke: @basic-white;
+
+  @media (max-width: @tablet-width) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .skills__desc {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px 0;
+  margin: 25px 0;
+
+  @media (max-width: @desktop-width) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: @tablet-width) {
+    padding: 0 20px;
+  }
 }
 
 .skills__text {
@@ -138,5 +162,11 @@
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+
+  @media (max-width: @tablet-width) {
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 

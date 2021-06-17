@@ -16,23 +16,6 @@ const sync = require("browser-sync").create();
 
 // Styles
 
-/*const styles = () => {
-  return gulp.src("source/less/style.less")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer(),
-      csso()
-    ]))
-    .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
-    .pipe(sync.stream());
-}
-
-exports.styles = styles;*/
-
 const styles = () => {
   return gulp.src("source/less/style.less")
     .pipe(plumber())

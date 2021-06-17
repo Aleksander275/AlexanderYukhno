@@ -1,10 +1,10 @@
-/*const headerButton = document.querySelector(".header__button");
+const headerButton = document.querySelector(".header__button");
 const headerNav = document.querySelector(".header__nav")
 
 headerButton.addEventListener("click", function() {
   headerButton.classList.toggle("header__button--close");
   headerNav.classList.toggle("header__nav--close");
-});*/
+});
 
 const callBackLink = document.querySelector(".about-me__button");
 const callBack = document.querySelector(".callback");
