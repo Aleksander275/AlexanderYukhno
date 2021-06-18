@@ -1148,11 +1148,21 @@ img {
   background-size: 100%;
   border: none;
 }
+@media (max-width: 1220px) {
+  .slider .slick-arrow.slick-prev {
+    left: 0;
+  }
+}
 .slider .slick-arrow.slick-next {
   right: 50px;
   background: url(../img/slider/sl-arrow_r.svg) 0 0 no-repeat;
   background-size: 100%;
   border: none;
+}
+@media (max-width: 1220px) {
+  .slider .slick-arrow.slick-next {
+    right: 0;
+  }
 }
 .portfolio {
   position: relative;
