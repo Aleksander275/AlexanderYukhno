@@ -804,6 +804,7 @@
   line-height: 20px;
   padding: 5px 10px;
   border: 1px solid #283645;
+  outline: none;
 }
 @media (max-width: 768px) {
   .callback__input {
@@ -819,6 +820,7 @@
   font-size: 20px;
   line-height: 20px;
   padding: 7px 10px;
+  resize: none;
 }
 .callback__button-wrapper {
   display: flex;

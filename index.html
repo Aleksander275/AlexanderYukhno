@@ -94,7 +94,7 @@
 
       <section class="callback">
 
-        <form class="callback__form" method="GET" action="" target="_blank">
+        <form class="callback__form" method="POST" action="#" target="_blank">
   
           <h2 class="callback__title">укажите ваши данные и я сам свяжусь с вами</h2>
   
@@ -105,28 +105,28 @@
               <li class="callback__item">
                 
                 <label for="name">ваше имя<sup>*</sup></label>
-                <input class="callback__input callback__input--name" type="name" id="name" placeholder="Александр Владимирович">
+                <input class="callback__input callback__input--name" name="name" type="name" id="name" placeholder="Александр Владимирович">
   
               </li>
   
               <li class="callback__item">
   
                 <label for="org-name">организация</label>
-                <input class="callback__input" type="name" id="org-name" placeholder="Разработка сайтов">
+                <input class="callback__input" type="name" name="organization" id="org-name" placeholder="Разработка сайтов">
   
               </li>
   
               <li class="callback__item">
   
                 <label for="login">почта</label>
-                <input class="callback__input" type="email" id="login" placeholder="Alexander275@rambler.ru">
+                <input class="callback__input" type="email" name="email" id="login" placeholder="Alexander275@rambler.ru">
   
               </li>
   
               <li class="callback__item">
   
                 <label for="tel">телефон<sup>*</sup></label>
-                <input class="callback__input callback__input--tel" type="tel" id="tel" placeholder="+79876543210">
+                <input class="callback__input callback__input--tel" type="tel" name="telephone" id="tel" placeholder="+79876543210">
   
               </li>
   
