@@ -4,7 +4,7 @@
   @media (max-width: @desktop-width) {
     display: block;
     padding: 0 30px;
-    margin: 150px 0 50px 0;
+    margin: 0 0 100px 0;
     animation: form 3s 2s both;
 
     @keyframes form {
@@ -19,7 +19,6 @@
 
   @media (max-width: @tablet-width) {
     padding: 0 20px;
-    margin-top: 140px;
   }
 }
 
@@ -30,7 +29,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: bounce 1s;
 
   @media (max-width: @desktop-width) {
     margin: 50px auto;
@@ -39,29 +37,22 @@
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
   }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
   100% {
-    transform: translateY(0);
+    transform: perspective(600px) translate(0px, 0%) rotateX(0);
   }
 }
 
 .callback__form {
   position: fixed;
+  top: 30%;
   width: 1100px;
   height: 410px;
   background-color: @basic-white;
   color: #283645;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  animation: bounce 1s;
 
   @media (max-width: @desktop-width) {
     position: relative;

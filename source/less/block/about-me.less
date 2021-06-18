@@ -1,3 +1,16 @@
+.about-me {
+  height: calc(~'85vh - 103px');
+
+  @media (max-width: @desktop-width) {
+    height: calc(~'85vh - 95px');
+  }
+}
+
+.about-me__breakpoint {
+  position: absolute;
+  top: 0;
+}
+
 .about-me__wrapper {
   max-width: 1220px;
   margin: 0 auto;
@@ -8,11 +21,12 @@
 
   @media (max-width: @desktop-width) {
     padding: 0 30px;
-    margin-top: 26%;
+    margin-top: 35%;
   }
 
   @media (max-width: @tablet-width) {
     padding: 0 20px;
+    margin-top: 45%;
   }
 }
 
